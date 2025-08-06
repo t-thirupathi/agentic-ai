@@ -1,5 +1,8 @@
 FROM python:3.13-slim
 
+# Install security updates
+RUN apt-get update && apt-get upgrade -y && apt-get clean
+
 # Set working directory
 WORKDIR /app
 

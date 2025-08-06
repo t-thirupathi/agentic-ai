@@ -30,7 +30,7 @@ gcloud run deploy mcp-server \
     --image us-central1-docker.pkg.dev/neat-veld-467519-e1/remote-mcp/mcp-server:latest \
     --region=us-central1
 ```
-### Testing
+### 6. Testing
 #### Option 1 – via Cloud Run proxy
 ```bash
 gcloud run services proxy mcp-server --region=us-central1
